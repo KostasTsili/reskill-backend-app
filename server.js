@@ -11,8 +11,8 @@ const {logger} = require('./middleware/logger');
 const {takeTwoReturnOne} = require('./middleware/handlePostData');
 const {errorHandler} = require('./middleware/errorHandler');
 
-
-app.use(cors(corsOptions));
+//corsOptions
+app.use(cors());
 
 app.use(logger);
 
